@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+
+
+<style>
+
+    #cercle {
+        margin-top: 150px;
+        margin-left: 450px;
+    }
+    body{
+    background-image: url('image/background.jpg');
+    background-color: black;
+    background-blend-mode: lighten;
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    opacity:1;
+    
+}
+html, body 
+{ 
+ height: 100%;
+ overflow: hidden
+}
+#loading {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  transition: opacity 4s;
+}
+
+
+#myBar {
+    width: 10%;
+  
+  background-color: #04AA6D;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
+
+button {
+  color: #fff;
+  background-color: rgb(92, 132, 219);
+  transition: all 1s ease-out;
+}
+
+button:hover,
+button:focus {
+  color: rgb(255, 177, 177);
+  background-color: #fff;
+}
+table,
+td {
+    border: 1px solid #333;
+    background-color: rgb(255, 161, 107)
+}
+
+thead,
+tfoot {
+    background-color: rgb(44, 84, 212);
+    color: #fff;
+}
+
+</style>
+
+
+
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js>
+</script>
+<script type="text/javascript" src="indexJS.js"> </script>
+
+</head>
+ <title>DRAGONARUTOSHIPPUSTREETFIGHTER SMASHBROS</title> 
+ <body>
+  <audio  id="musiquetahlesfou1" src="song2.mp3" controls style="display:none" ></audio>
+ <div id="lefond" style="z-index:1;position: absolute; width:99% ; height:98% ; opacity: 0.7; display:none">
+     </div>
+<!--PAGE LOADING-->
+
+ <div id="loading" style="z-index:3 ;position: absolute; height:100% ; opacity:1; display: block ">
+<div id=divbar style ="position:relative ; top:645px">
+    <img  id="gokuspeed"src="image/gokuspeed.gif" width="150px" height="150px" style ="position:absolute; left:1px" />
+    <div id="myBar"></div>
+    </div>
+</div>
+
+<!--PAGE MENU-->
+
+ <div id="menu" style="position: absolute; top: 120px; z-index: 4; margin-left: 10px; display: none;">
+      <img  id="start" src="image/play.gif"  style ="position:absolute;"  />
+    
+    </div>
+
+<!--Page Choix perso-->
+
+<div id="choixPerso" style="position: absolute; z-index: 4; display: none;height:100% ; width:100% ;">
+  <img id="persochoisie"  src="image/KenChoix.gif"  style="position: absolute;">
+  <img id="next_perso"  src="image/fleche_droit.png"  style="   position: absolute;" onclick="changeImage()">
+  <img id="vs"  src="image/vs2.png"  style="position: absolute;">
+  <img id="mobchoisie"  src="image/MikaChoixvs.gif"  style="position: absolute;">
+  <img id="btnplay"  src="image/btnplay.png"  style="position: absolute;">
+</div>
+
+
+<!--Page choix thème-->
+
+ <div id="choixtheme" style="display:none">
+    <img id="themechoisie"  src="image/theme3.gif" style="position: relative;border: 4mm ridge rgba(211, 220, 50, .6) ">
+    <img id="mikatheme" src ="image/mikatheme.png" style = "position:absolute">
+    <img id="kentheme" src ="image/kentheme.png" style = "position:absolute">
+    <img id="nexttheme" src ="image/nexttheme.png" style = "position:absolute" onclick="changeTheme()">
+    <a id="lienjeu"  href="Jeu.html ?image/theme3.gif">
+    <img id="btnplay2"  src="image/btnplay.png"   style="position: absolute;" onclick="jeu()">  </a>
+    <img id="btnparametre"  src="image/parametre.png"   style="position: absolute;"onclick="touche()" >
+    <img id="touche" src="image/touche.png" style="position: absolute; display: none; ">
+</div>
+
+<!-- explication les touches   -->
+
+<!-- le terrain de jeu  -->
+<div id="jeu" style="display:none">
+    <img  id="bottom" class="perso" src="image/bottom.png" style="position: relative;top: 674px;height: 74px;width: 1536px;"  >
+</div>
+
+
+</body>
+
+ <script type="text/javascript" src="responsive.js"> </script>
+
+</html>

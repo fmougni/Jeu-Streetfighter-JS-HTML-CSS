@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+
+
+<style>
+
+    body{
+    background-image: url('image/theme_1.gif');
+    background-color: black;
+    background-blend-mode: lighten;
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    opacity:1;
+
+}
+html, body 
+{ 
+ height: 100%;
+ overflow: hidden
+}
+</style>
+
+
+
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js>
+</script>
+
+<script type="text/javascript" src="Jeu_js.js"> </script>
+
+</head>
+ <title>STREETFIGHTER</title> 
+ <body>
+    <audio  id="musiquetahlesfou1" src="./song2.mp3" controls style="display:none" ></audio>
+<!--Jeu-->
+<div id="jeu" style="display:block">
+<!--Div perso vie ect-->
+    <div id= "divViePerso">
+    <img class="headperso" id ="headperso" src="image/Kenhead1.png" style="position: absolute;z-index:5;top:0px"> 
+    <div id="PersoBar"style=" width: 43%;position:absolute;
+    height: 122px;background-color: #04AA6D;color: white;
+    text-align: center; line-height: 30px; 
+    left:127px"></div>    
+</div>
+    <div id= "divVieMob">
+    <img  id="headmob" class="headmob" src="image/mobhead.png" style="position: absolute;top:0px;z-index:5">
+    <div id="MobBar"style="position:absolute;
+    width: 43%;
+    background-color: red; color: white;
+    text-align: center; 
+    line-height: 30px;"></div> 
+    </div>
+    <!--Div perso vie ect FIN >-->
+    <img  id="perso" class="perso" src="image/Base.png" style="height: 332px;bottom: 0px;margin-bottom: 0px;position: absolute;">
+   
+    <img  id="mob" class="mob" src="image/basemob.png" style="left:1450px ;height: 332px ;bottom: 0px;margin-bottom: 0px;position: absolute;">
+</div>
+<div id="divmenurestart">
+    <a id="menu"  href="menu.html">
+        <img id="menurestart"  src="image/winner.png"  style="display:none; position: absolute;" onclick="restart()">  </a>
+</div>
+
+</body>
+<script type="text/javascript" src="responsiveJeu.js"> </script>
+
+</html>
